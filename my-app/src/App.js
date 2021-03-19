@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import AirportInfo from './components/AirportInfo.js';
-import Places from './components/Places.js';
+import Quotes from './components/Quotes.js';
 import Header from './components/Header.js';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <Header />
       <AirportInfo />
-      <Places />
+      <Quotes />
     </div>
   );
 }
