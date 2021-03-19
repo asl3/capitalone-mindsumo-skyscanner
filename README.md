@@ -1,5 +1,5 @@
-# react-with-apis
-React Demo with the Skyscanner API
+# Capital One Mindsumo Skyscanner Challenge
+Created using React with the Skyscanner API
 
 ## Setup for Demo
 
