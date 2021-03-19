@@ -40,8 +40,6 @@ function AirportInfo() {
             <button className="search">Submit</button>
         </form>
         { showPlaces ? <Places places={places}></Places> : <></>}
-
-        <Places places={places}></Places>
     </div>
 }
 export default AirportInfo;
