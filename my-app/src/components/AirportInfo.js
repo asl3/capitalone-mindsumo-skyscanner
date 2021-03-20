@@ -3,7 +3,9 @@ import './AirportInfo.css';
 import Quotes from './Quotes';
 
 function AirportInfo() {
+    //declare constants for path parameters
     const [quotes, setQuotes] = useState([])
+    const [currency, setCurrency] = useState("")
     const [originplace, setOriginPlace] = useState("")
     const [destinationplace, setDestinationPlace] = useState("")
     const [outboundpartialdate, setOutBoundPartialDate] = useState("")
@@ -26,8 +28,8 @@ function AirportInfo() {
             const qString = {
                 "outboundpartialdate": outboundpartialdate
             }
-            let response = await fetch('https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browseroutes/v1.0/US/USD/en-US/' + originplace + "/" + destinationplace + "/" + outboundpartialdate + "/" + inboundpartialdate, reqOptions) 
-            // let response = await fetch('https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browseroutes/v1.0/US/USD/en-US/SFO-sky/ORD-sky/?' + new URLSearchParams(qString), reqOptions)    
+            // append path parameters to URL
+            let response = await fetch('https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browseroutes/v1.0/US/' + currency + '/en-US/' + originplace + "/" + destinationplace + "/" + outboundpartialdate + "/" + inboundpartialdate, reqOptions)     
             response = await response.json() 
             setQuotes(response.Quotes)
             console.log(response.Quotes)
@@ -38,18 +40,22 @@ function AirportInfo() {
     }
     
     return <div className="flightinfo">
-        <form onSubmit={handleSubmit}>
+        <form className = "form" onSubmit={handleSubmit}>
+            {/* include text boxes to take relevant input from user */}
             <label htmlFor="originplace">Origin Airport Code</label>
             <input id="originplace" value={originplace} onChange={(e) => setOriginPlace(e.target.value)} required />
             <label htmlFor="destinationplace">Destination Airport Code</label>
             <input id="destinationplace" value={destinationplace} onChange={(e) => setDestinationPlace(e.target.value)} required />
             <label htmlFor="outboundpartialdateInput">Outbound Date</label>
             <input id="outboundpartialdateInput" value={outboundpartialdate} onChange={(e) => setOutBoundPartialDate(e.target.value)} required />
-            <label htmlFor="inboundpartialdateInput">Inbound Date (optional)</label>
+            <label htmlFor="inboundpartialdateInput">Inbound Date</label>
             <input id="inboundpartialdateInput" value={inboundpartialdate} onChange={(e) => setInBoundPartialDate(e.target.value)} required />
+            <label htmlFor="currencyInput">Currency</label>
+            <input id="currencyInput" value={currency} onChange={(e) => setCurrency(e.target.value)} required />   
             <button className="search">Submit</button>
         </form>
-
+        
+        {/* only show Quotes table if the showQuotes variable has been set to true */}
         { showQuotes ? <Quotes quotes={quotes}></Quotes> : <></>}
     </div>
 }

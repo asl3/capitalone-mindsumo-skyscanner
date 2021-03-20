@@ -10,14 +10,16 @@
     align-items: center;
 }
 
-form {
+.form {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
+    background-color: white
 }
 
 .search {
-    background-color: #008140;
+    background-color: #60AB9A;
     padding: 20px 20px;
     height: 10px;
     color: white; 

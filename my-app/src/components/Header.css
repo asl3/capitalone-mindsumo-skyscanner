@@ -1,5 +1,5 @@
 .header {
-    background-color: #013D5B;
+    background-color:  #29335C;
     min-height: 10vh;
     display: flex; 
     flex-direction: column;
@@ -7,4 +7,11 @@
     justify-content: center;
     font-size: 36px;
     color: white;
+}
+
+.instructions {
+    font-size: 20px;
+    background-color: white;
+    padding-left: 200px;
+    padding-right: 200px;
 }
