@@ -44,17 +44,22 @@ function AirportInfo() {
             {/* include text boxes to take relevant input from user */}
             <label htmlFor="originplace">Origin Airport Code</label>
             <input id="originplace" value={originplace} onChange={(e) => setOriginPlace(e.target.value)} required />
+
             <label htmlFor="destinationplace">Destination Airport Code</label>
             <input id="destinationplace" value={destinationplace} onChange={(e) => setDestinationPlace(e.target.value)} required />
+            
             <label htmlFor="outboundpartialdateInput">Outbound Date</label>
             <input id="outboundpartialdateInput" value={outboundpartialdate} onChange={(e) => setOutBoundPartialDate(e.target.value)} required />
+            
             <label htmlFor="inboundpartialdateInput">Inbound Date</label>
             <input id="inboundpartialdateInput" value={inboundpartialdate} onChange={(e) => setInBoundPartialDate(e.target.value)} required />
+            
             <label htmlFor="currencyInput">Currency</label>
             <input id="currencyInput" value={currency} onChange={(e) => setCurrency(e.target.value)} required />   
+            
             <button className="search">Submit</button>
         </form>
-        
+
         {/* only show Quotes table if the showQuotes variable has been set to true */}
         { showQuotes ? <Quotes quotes={quotes}></Quotes> : <></>}
     </div>
