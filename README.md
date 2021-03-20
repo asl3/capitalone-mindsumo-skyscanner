@@ -1,85 +1,15 @@
 # Capital One Mindsumo Skyscanner Challenge
-Created using React with the Skyscanner API
+Developed using React.js with the Skyscanner API (https://rapidapi.com/skyscanner/api/skyscanner-flight-search). 
 
-## Setup for Demo
+My web app was developed using React.js and the Skyscanner API. My solution takes in user input for path parameters and appends them to the API request in order to retrieve the appropriate data. It iterates over the map of retrieved data to calculate the minimum price so it can highlight the corresponding row.
 
-### Install Nvm
+## Task One: Let users view their flight options between two destinations for specific dates
+I completed this task by including text boxes to allow users to input origin location, destination location, outbound date, inbound date, and currency. I then appended these specified path parameters to the API URL in order to query the data corresponding to the user's input.
 
-#### MacOS/Linux
+## Task Two: Allow users to select their currency preference when searching for flights
+I completed this task by including a text box to allow users to input their desired currency. I then appended this specified path parameter to the API URL.
 
-To install or update nvm, run the install script for nvm located [here](https://github.com/nvm-sh/nvm/blob/v0.35.3/install.sh) or using the following commands. 
-
-```
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
-```
-```
-wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
-```
-
-If you have troubleshooting issues, check out the [github repo](https://github.com/nvm-sh/nvm#troubleshooting-on-linux) for nvm.
-
-#### Windows 
-
-To install nvm on Windows, download the installer [here](https://github.com/coreybutler/nvm-windows/releases).
-
-If you have issues or need more info, check out the [github repo](https://github.com/coreybutler/nvm-windows) for nvm-windows.
-
-### Install node
-
-We need to install the latest version of node and make sure we use it.
-
-```
-nvm install 14
-nvm use 14
-node --version
-```
-
-## React Demo
-
-This repo contains starter code (with some CSS formatting and the file structure) and the finished code from the demo. Take a peek or try running it locally by running a few commands below. 
-
-```
-git clone https://github.com/kristenkoyanagi/react-with-apis
-cd react-with-apis
-cd starter-app #or finished-app
-yarn install  #or npm install
-yarn start #or npm start
-```
-
-### Add your API key
-1. Change `.env.example` to `.env`
-2. Sign up for a free API Key at [Skyscanner API link](https://rapidapi.com/skyscanner/api/skyscanner-flight-search) 
-3. Make sure your API key enabled
-4. Add your API key to `.env` in the space provided
-5. Restart your app
-
-## If you want to build an app from scratch
-
-Run the [create-react-app](https://reactjs.org/docs/create-a-new-react-app.html)
-
-Run either block of commands below.
-```
-npm init react-app my-app
-cd my-app
-npm start
-```
-``` 
-npx create-react-app my-app
-cd my-app
-npm start
-```
-
-[npm](https://www.npmjs.com/) and [yarn](https://yarnpkg.com/) are separate node package managers that helps you install dependencies, test, run, and build your app. You can use either one as long as you stick with one.
+## Task Three: Use intuitive UI principles to highlight or call out the cheapest flights for a user running a search
+My solution iterates over the map retrieved by the API request and visits each price returned to determine the overall minimum price value. It then compares each price in the display table to the minimum price value, and if the current price is equivalent to the minimum price value, the entire corresponding row is bolded in the table.
 
 
-### Check your starter app
-
-If you open [http://localhost:3000](http://localhost:3000), you should see the starter app running from the `create-react-app` command.
-
-
-## Free React Resources
-Check some of these out if you want to learn more about React:
-- [React Tutorial (docs)](https://reactjs.org/tutorial/tutorial.html)
-- [The Beginner's Guide to React (egghead.io videos)](https://egghead.io/courses/the-beginner-s-guide-to-react)
-- [Interactive React Challenges (freecodecamp)](https://www.freecodecamp.org/learn/front-end-libraries/react/)
-- [Full React Course 2020 (YouTube)](https://www.youtube.com/watch?v=4UZrsTqkcW4)
