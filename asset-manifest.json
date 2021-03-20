@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.db8f0be3.chunk.css",
-    "main.js": "/my-app/static/js/main.e8284cd0.chunk.js",
-    "main.js.map": "/my-app/static/js/main.e8284cd0.chunk.js.map",
-    "runtime-main.js": "/my-app/static/js/runtime-main.cb66a9b6.js",
-    "runtime-main.js.map": "/my-app/static/js/runtime-main.cb66a9b6.js.map",
-    "static/js/2.ed7b7885.chunk.js": "/my-app/static/js/2.ed7b7885.chunk.js",
-    "static/js/2.ed7b7885.chunk.js.map": "/my-app/static/js/2.ed7b7885.chunk.js.map",
-    "static/js/3.80bf2deb.chunk.js": "/my-app/static/js/3.80bf2deb.chunk.js",
-    "static/js/3.80bf2deb.chunk.js.map": "/my-app/static/js/3.80bf2deb.chunk.js.map",
-    "index.html": "/my-app/index.html",
-    "static/css/main.db8f0be3.chunk.css.map": "/my-app/static/css/main.db8f0be3.chunk.css.map",
-    "static/js/2.ed7b7885.chunk.js.LICENSE.txt": "/my-app/static/js/2.ed7b7885.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/my-app/static/media/airplane.3302f97a.jpg"
+    "main.css": "/capitalone-mindsumo-skyscanner/static/css/main.33f8dcd4.chunk.css",
+    "main.js": "/capitalone-mindsumo-skyscanner/static/js/main.7ad19c69.chunk.js",
+    "main.js.map": "/capitalone-mindsumo-skyscanner/static/js/main.7ad19c69.chunk.js.map",
+    "runtime-main.js": "/capitalone-mindsumo-skyscanner/static/js/runtime-main.645d6d42.js",
+    "runtime-main.js.map": "/capitalone-mindsumo-skyscanner/static/js/runtime-main.645d6d42.js.map",
+    "static/js/2.0a2dcd54.chunk.js": "/capitalone-mindsumo-skyscanner/static/js/2.0a2dcd54.chunk.js",
+    "static/js/2.0a2dcd54.chunk.js.map": "/capitalone-mindsumo-skyscanner/static/js/2.0a2dcd54.chunk.js.map",
+    "static/js/3.8711a962.chunk.js": "/capitalone-mindsumo-skyscanner/static/js/3.8711a962.chunk.js",
+    "static/js/3.8711a962.chunk.js.map": "/capitalone-mindsumo-skyscanner/static/js/3.8711a962.chunk.js.map",
+    "index.html": "/capitalone-mindsumo-skyscanner/index.html",
+    "static/css/main.33f8dcd4.chunk.css.map": "/capitalone-mindsumo-skyscanner/static/css/main.33f8dcd4.chunk.css.map",
+    "static/js/2.0a2dcd54.chunk.js.LICENSE.txt": "/capitalone-mindsumo-skyscanner/static/js/2.0a2dcd54.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/capitalone-mindsumo-skyscanner/static/media/airplane.3302f97a.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.cb66a9b6.js",
-    "static/js/2.ed7b7885.chunk.js",
-    "static/css/main.db8f0be3.chunk.css",
-    "static/js/main.e8284cd0.chunk.js"
+    "static/js/runtime-main.645d6d42.js",
+    "static/js/2.0a2dcd54.chunk.js",
+    "static/css/main.33f8dcd4.chunk.css",
+    "static/js/main.7ad19c69.chunk.js"
   ]
 }
