@@ -26,10 +26,10 @@ function AirportInfo() {
                 }
             }
             const qString = {
-                "outboundpartialdate": outboundpartialdate
+                "inboundpartialdate": inboundpartialdate
             }
             // append path parameters to URL
-            let response = await fetch('https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browseroutes/v1.0/US/' + currency + '/en-US/' + originplace + "/" + destinationplace + "/" + outboundpartialdate + "/" + inboundpartialdate, reqOptions)     
+            let response = await fetch('https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browseroutes/v1.0/US/' + currency + '/en-US/' + originplace + "/" + destinationplace + "/" + outboundpartialdate + "/?" + + new URLSearchParams({inboundpartialdate: inboundpartialdate}), reqOptions)     
             response = await response.json() 
             setQuotes(response.Quotes)
             console.log(response.Quotes)
