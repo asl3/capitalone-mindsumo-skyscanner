@@ -8,5 +8,6 @@ I completed this task by including text boxes to allow users to input origin loc
 I completed this task by including a text box to allow users to input their desired currency. I then appended this specified path parameter to the API URL.
 
 ## Task Three: Use intuitive UI principles to highlight or call out the cheapest flights for a user running a search
+My solution iterates over the map retrieved by the API request and visits each price to determine the minimum price value. It then compares each price in the display table to the minimum price value, and if the current price is equivalent to the minimum price value the current price is bolded in the table display.
 
 
