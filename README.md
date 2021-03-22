@@ -1,4 +1,6 @@
 # Capital One Mindsumo Skyscanner Challenge
+View website here: https://asl3.github.io/capitalone-mindsumo-skyscanner/
+
 Developed using React.js with the Skyscanner API (https://rapidapi.com/skyscanner/api/skyscanner-flight-search). 
 
 My web app was developed using React.js and the Skyscanner API. My solution takes in user input for path parameters and appends them to the API request in order to retrieve the appropriate data. It iterates over the map of retrieved data to calculate the minimum price so it can highlight the corresponding row.
