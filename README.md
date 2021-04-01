@@ -1,4 +1,4 @@
-# Capital One Mindsumo Skyscanner Challenge
+# Capital One Mindsumo Skyscanner Challenge [Winning Project]
 View website here: https://asl3.github.io/capitalone-mindsumo-skyscanner/
 
 Developed using React.js with the Skyscanner API (https://rapidapi.com/skyscanner/api/skyscanner-flight-search). 
